@@ -22,7 +22,7 @@ public class Venta {
 	
 	private String fecha;
 	
-	@ManyToOne
+	@ManyToOne //UNA PERSONA PUEDE TERNER MUCHAS VENTAS - TABLA EXTERNA PUEDE TENER VARIOS REGISTROS DE ESTA TABLA
 	@JoinColumn(name = "id_persona", nullable = false)
 	private Persona persona;
 	
